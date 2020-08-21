@@ -33,7 +33,7 @@ const responseLaunches = (data) => ({
 export const fetchLaunches = (year,launchSuccess,landSuccess) => {
     return async dispatch => {
         dispatch(requestLaunches())
-        year = year!==null?year.toLowerCase():"all"
+        year = year!==null?year:"all"
         launchSuccess = launchSuccess!==null?launchSuccess.toLowerCase():"all"
         landSuccess = landSuccess!==null?landSuccess.toLowerCase():"all"
         let launches = await fetch(`https://api.spaceXdata.com/v3/launches?limit=100${year==="all"?"":`&launch_year=${year}`}${landSuccess==="all"?"":`&land_success=${landSuccess}`}${launchSuccess==="all"?"":`&launch_success=${launchSuccess}`}`)

@@ -3,18 +3,7 @@ import styled from 'styled-components'
 import LaunchDetails from './LaunchDetails'
 import Header from './Header'
 
-/*const LaunchDetailsComp = styled(LaunchDetails)`
-    
-    flex-basis:24%;
-    background-color:blue;
-    margin-bottom:10px;
-    display:flex;
-    flex-direction:column;
-    padding:15px;
-    margin-left:10px;
 
-    
-`*/
 
 const LaunchDetailsComp = styled(LaunchDetails)`
     background-color: rgb(244, 248, 250);
